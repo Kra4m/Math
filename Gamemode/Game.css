@@ -1,0 +1,64 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+}
+
+header {
+    background-color: #2196F3;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.draggableContainer, .droppableContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.draggableContainer {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #2196F3;
+    background-color: #E3F2FD;
+    border-radius: 8px;
+}
+
+.box {
+    background-color: #BBDEFB;
+    margin: 5px;
+    padding: 15px;
+    cursor: grab;
+    letter-spacing: 2px;
+    border: 1px solid #1565C0;
+    border-radius: 4px;
+}
+
+.droppableContainer {
+    flex: 1;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.droppable {
+    margin: 5px;
+    padding: 5px; /* Adjusted padding */
+    background-color: #BBDEFB;
+    line-height: 20;
+    border: 1px solid #1565C0;
+    border-radius: 4px;
+}
+
+.droppable p {
+    margin: 0;
+}
+
+.droppable p + p {
+    margin-top: 15px;
+}
+
+#remarks, #scores {
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #2196F3;
+}
